@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Virtual Pet</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main class="pet-container">
+      <h1>Octocat!</h1>
+      <img
+        src="https://octodex.github.com/images/NUX_Octodex.gif"
+        alt="Cat with butterfly hologram"
+      />
+      <section class="status-container">
+        <p>Name: <span id="pet-name">Carlos</span></p>
+        <p>Hunger level: <span id="hunger-level">50%</span></p>
+        <p>Mood: <span id="mood">Sad</span></p>
+      </section>
+      <section class="action-container">
+        <button id="feed-button">Feed</button>
+        <button id="play-button">Play</button>
+      </section>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
