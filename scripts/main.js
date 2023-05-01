@@ -78,7 +78,9 @@ function playPet() {
   }
 }
 
-//alert("Welcome! You just found a sad and abandoned special edition octocat tamagochi that a careless child left behind. Your goal: to make your octocat happy!");
+alert(
+  "Welcome! You just found a sad and abandoned special edition octocat tamagochi that a careless child left behind. Your goal: to make your octocat happy!"
+);
 
 feedButton.addEventListener("click", feedPet);
 playButton.addEventListener("click", playPet);
