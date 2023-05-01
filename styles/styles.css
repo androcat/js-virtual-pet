@@ -33,6 +33,10 @@ img {
   border-color: black;
 }
 
+.status-container:hover {
+  box-shadow: 10px 10px 0px rgb(245, 54, 54);
+}
+
 .button {
   background-color: azure;
   border: none;
