@@ -39,7 +39,29 @@ function feedPet() {
     mood = "Happy!";
     moodEl.innerText = mood;
   }
-  // console.log(hungerLevel);
+  console.log(mood);
+  flashStatus();
+}
+
+function flashStatus() {
+  if (mood == "Depressed") {
+    document.querySelector("#mood").style.color = "tomato";
+  } else if (mood == "?") {
+    document.querySelector("#mood").style.color = "deepskyblue";
+  } else if (mood == "Sad") {
+    document.querySelector("#mood").style.color = "blue";
+  } else if (mood == "Happy!") {
+    document.querySelector("#mood").style.color = "green";
+  } else {
+    document.querySelector("#mood").style.color = "hotpink";
+  }
+
+  // const style = document.createElement("style");
+  // namePlateEl.style.innerHTML = `
+  // .status-container {
+  //   background-color: rgb(179, 237, 245);
+  // }
+  // `;
 }
 
 function greeting() {
@@ -76,10 +98,11 @@ function playPet() {
     mood = "Elated!";
     moodEl.innerText = mood;
   }
+  flashStatus();
 }
 
 alert(
-  "Welcome! You just found a sad and abandoned special edition octocat tamagochi that a careless child left behind. Your goal: to make your octocat happy!"
+  "Welcome! You just found a sad and abandoned special edition octocat tamagotchi that a careless child left behind. Your goal: to make your octocat happy!"
 );
 
 feedButton.addEventListener("click", feedPet);
